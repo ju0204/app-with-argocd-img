@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: <repository_user>/app-with-argocd
+        repository: ju0204/app-with-argocd-img
         ref: main
         token: ${{ secrets.TOKEN }}
         
