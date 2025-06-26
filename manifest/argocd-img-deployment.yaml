@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: argode-img-container
-        image: juhee24/app-with-argocd-img:bb7714af5ffb639994b2e2d862349fc5bf304d148d47bc576dde8f69169514f51afd406775d00d7
+        image: nginx:1.23
