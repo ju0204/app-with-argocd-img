@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: argode-img-container
-        image: ju0204/app-with-argocd-img:5f36e7a
+        image: nginx:latest
