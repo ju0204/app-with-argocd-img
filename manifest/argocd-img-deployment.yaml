@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: argode-img-container
-        image: nginx:latest
+        image: nginx
