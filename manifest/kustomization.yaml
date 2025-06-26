@@ -1,6 +1,7 @@
 resources:
   - argocd-img-deployment.yaml
   - argocd-img-service.yaml
+  - argocd-app.yaml
 images:
   - name: nginx
     newName: juhee24/app-with-argocd-img
