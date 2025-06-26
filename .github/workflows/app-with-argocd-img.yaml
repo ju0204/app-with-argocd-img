@@ -13,9 +13,16 @@ jobs:
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven
+
+        # 다른 레포로 연결
+        repository: ju0204/app-with-argocd-img-manifest  #  옮긴 레포 이름
+        path: manifest                #  체크아웃될 디렉토리 이름
+        ref: main                              #  브랜치 이름
+        token: ${{ secrets.TOKEN }}  
+      
+        # java-version: '17'
+        # distribution: 'temurin'
+        # cache: maven
 
     - name: Make application.properties
       run: |
