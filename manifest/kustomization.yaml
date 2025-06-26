@@ -5,4 +5,4 @@ resources:
 images:
   - name: nginx
     newName: juhee24/app-with-argocd-img
-    newTag: "5f36e7a"
+    newTag: "8961a34"
