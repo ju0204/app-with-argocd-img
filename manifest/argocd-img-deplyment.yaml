@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
       - name: app
-        image: ju0204/app-with-argocd:latest
+        image: ju0204/app-with-argocd-img:latest
