@@ -122,3 +122,4 @@ replay_pid*
 
 # Properties files
 *.properties
+.github/workflows/app-with-actions.yml
