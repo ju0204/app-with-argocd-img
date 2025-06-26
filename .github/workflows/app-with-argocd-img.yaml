@@ -19,6 +19,7 @@ jobs:
 
     - name: Make application.properties
       run: |
+        mkdir -p ./src/main/resources # 경로 생성 추가
         cd ./src/main/resources
         touch ./application.properties
         echo "${{ secrets.PROPERTIES }}" > ./application.properties
