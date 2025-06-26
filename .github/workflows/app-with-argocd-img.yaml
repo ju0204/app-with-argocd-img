@@ -2,8 +2,12 @@ name: App With Github Actions with ArgoCD
 
 on:
   # workflow_dispatch
-   push
-
+   push:  
+    branches:
+       - main
+    paths-ignore:
+      - './manifest/**'
+      
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -69,7 +73,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: ju0204/app-with-argocd-img-manifest
+    #    repository: ju0204/app-with-argocd-img-manifest
         ref: main
         token: ${{ secrets.TOKEN }}
 
