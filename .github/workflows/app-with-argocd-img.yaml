@@ -72,6 +72,9 @@ jobs:
         repository: ju0204/app-with-argocd-img-manifest
         ref: main
         token: ${{ secrets.TOKEN }}
+
+    - name: Set SHORT_SHA env
+      run: echo "SHORT_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV
         
     - name: Set up Image
       run: |
