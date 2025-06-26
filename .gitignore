@@ -121,7 +121,5 @@ replay_pid*
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,java
 
 # Properties files
-*.properties
-.github/workflows/app-with-actions.yml
-.github/workflows/github-action-artifact-01.yml
-.github/workflows/*.yml
+ *.properties
+

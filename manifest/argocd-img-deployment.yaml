@@ -14,5 +14,5 @@ spec:
         app.kubernetes.io/name: argocd-web-img
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: argode-img-container
+        image: juhee24/app-with-argocd-img:bb7714af5ffb639994b2e2d862349fc5bf304d148d47bc576dde8f69169514f51afd406775d00d7
