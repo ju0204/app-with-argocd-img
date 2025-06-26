@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: argocd-img-deployment
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app.kubernetes.io/name: argocd-web-img
