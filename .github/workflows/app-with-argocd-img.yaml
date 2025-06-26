@@ -85,6 +85,9 @@ jobs:
       run: |
         sed -i "s%image: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}:[a-f0-9]\+%image: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}:${{ env.SHORT_SHA }}%" ./manifest/argocd-img-deployment.yaml
         sed -i "s%image: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}:[a-f0-9]\+%image: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}:${{ env.SHORT_SHA }}%" ./manifest/argocd-app.yaml
+        sed -i "s/newTag: \".*\"/newTag: \"${{ env.SHORT_SHA }}\"/" ./manifest/kustomization.yaml
+
+    
     - name: Commit and push changes
       run: |
         git config --local user.email "p1106000@gmail.com"
